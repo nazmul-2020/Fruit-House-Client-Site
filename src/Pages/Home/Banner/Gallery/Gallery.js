@@ -10,10 +10,10 @@ import "./Gallery.css"
 
 const Gallery = () => {
     return (
-        <div className='text-center mt-4'>
+        <div className='text-center mt-5'>
             <h1>Available in our Stock</h1>
-            <div className='container mt-3'>
-                <div className='row g-3 bg-dark'>
+            <div className='container mt-4'>
+                <div className='row g-3'>
                     <div className='col-lg-6'>
                         <div className='row g-3'>
                             <div className='col-lg-6 g-'>
