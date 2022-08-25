@@ -1,13 +1,11 @@
 import React from 'react';
-import ManageItems from '../ManageItems/ManageItems';
+import Banner from './Banner/Banner';
 
 const Home = () => {
     return (
         <div>
-            <h1>home the
-                pfdgujeior
-            </h1>
-            <ManageItems></ManageItems>
+            <h1>home</h1>
+            <Banner/>
         </div>
     );
 };
