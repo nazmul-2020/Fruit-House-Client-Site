@@ -1,0 +1,12 @@
+.banner{
+    background-image: url(../../../Image/Banner.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+    height: 100vh;
+}
+
+.banner-text{
+color: rgb(3, 255, 238)
+}
