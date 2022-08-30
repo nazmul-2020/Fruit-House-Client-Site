@@ -1,13 +1,14 @@
 import React from 'react';
 import { InputGroup, Button, Form } from 'react-bootstrap';
+import './Footer.css'
 
 
 const Footer = () => {
     return (
         <div className='mt-5  bg-dark text-white'>
             <div className='container'>
-                <div className='row py-4'>
-                    <div className=' col-12 col-md-6 col-lg-3'>
+                <div className='row py-4 footer'>
+                    <div className=' col-12 col-md-6 col-lg-3 mx-auto'>
                         <h6 className='mb-0'>MENU</h6>
                         <p className='mb-0 mt-2'>Home</p>
                         <p className='mb-0'>Manage Items</p>
@@ -41,7 +42,6 @@ const Footer = () => {
                                 Subscribe
                             </Button>
                         </InputGroup>
-
                     </div>
                 </div>
             </div>

@@ -1,6 +1,6 @@
 import React from 'react';
 import Banner from './Banner/Banner';
-import Gallery from './Banner/Gallery/Gallery';
+import Gallery from './Gallery/Gallery';
 
 const Home = () => {
     return (
