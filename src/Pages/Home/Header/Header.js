@@ -1,9 +1,13 @@
 import React from 'react';
 import { Container, Nav, Navbar } from 'react-bootstrap';
+import { useAuthState } from 'react-firebase-hooks/auth';
+import auth from '../../../firebase.init';
 import './Header.css'
 
 
 const Header = () => {
+    const [user, loading, error] = useAuthState(auth);
+
     return (
         <div className='' id=''>
             <Navbar fixed="top" bg="dark" className='py-' expand="lg">
@@ -21,11 +25,10 @@ const Header = () => {
                             <Nav.Link className='text-info' href="#pricing">Add Item</Nav.Link>
                             <Nav.Link className='text-info' href="#pricing">My Items</Nav.Link>
                             <Nav.Link className='text-info' href="#pricing">Blogs</Nav.Link>
+                            {user ? <Nav.Link className='text-info' href="/signUP">Sign Up</Nav.Link> : <Nav.Link className='text-info' href="/signIn">Sign In</Nav.Link>}
 
-                            <Nav.Link className='text-info' href="/signIn">Sign In</Nav.Link>
-                            <Nav.Link className='text-info' href="/signUP">Sign Up</Nav.Link>
+
                         </Nav>
-
                     </Navbar.Collapse>
                 </Container>
             </Navbar>

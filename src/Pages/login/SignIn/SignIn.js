@@ -23,8 +23,8 @@ const SignIn = () => {
         signInError = <p className='text-center text-danger'>{error?.message || gError?.message}</p>
     }
 
-    if (gUser) {
-        console.log(gUser)
+    if (user || gUser) {
+        console.log(user, gUser)
     }
 
     const onSubmit = (data) => {
@@ -36,7 +36,7 @@ const SignIn = () => {
     return (
         <div className='pt-5 full-Height'>
             <div className='m-5  mx-auto p-4 shadow-lg form-container'>
-                <h3 className='text-center text-info mb-3'> Please Log In</h3>
+                <h3 className='text-center text-info mb-3'> Please Sign In</h3>
 
                 <Form onSubmit={handleSubmit(onSubmit)}>
                     <Form.Group className="mb-1" controlId="formBasicEmail">
@@ -56,11 +56,9 @@ const SignIn = () => {
                         {errors.email?.type === 'required' && <span className='text-danger'>{errors.email.message}</span>}
 
                         {errors.email?.type === 'pattern' && <span className='text-danger'>{errors.email.message}</span>}
-                        {/* </Form.Label> */}
-
                     </Form.Group>
 
-                    <Form.Group className="mb-3" controlId="formBasicPassword">
+                    <Form.Group className="" controlId="formBasicPassword">
                         <Form.Label>Password</Form.Label>
                         <Form.Control {...register("password", {
                             required: {
