@@ -1,4 +1,5 @@
 import React from 'react';
+import ScrollToTop from "react-scroll-to-top";
 import { InputGroup, Button, Form } from 'react-bootstrap';
 import './Footer.css'
 
@@ -45,7 +46,7 @@ const Footer = () => {
                     </div>
                 </div>
             </div>
-
+            <ScrollToTop smooth top='300' color='red' />
         </div>
     );
 };
