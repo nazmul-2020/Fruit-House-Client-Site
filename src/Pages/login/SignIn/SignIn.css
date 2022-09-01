@@ -3,9 +3,6 @@
     background-color: rgba(128, 128, 128, 0.202);
 }
 
-.full-Height{
-    height: 100vh;
-}
 
 @media only screen and (max-width: 550px) {
     .form-container {
